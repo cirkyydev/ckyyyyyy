@@ -24,7 +24,7 @@ client.on('ready', async () => {
         channelId: channel.id,
         guildId: process.env.guild,
         selfMute: true,
-        selfDeaf: true,
+        selfDeaf: false,
         adapterCreator: channel.guild.voiceAdapterCreator
       });
       console.log(`Joined voice channel ${channel.name}`);
